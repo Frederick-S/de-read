@@ -1,1 +1,1 @@
-module.exports = require('./lib/read.js');
+module.exports = require('./lib/de-read.js');
