@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "deread": "./bin/read"
+    "de-read": "./bin/de-read"
   },
   "repository": {
     "type": "git",
