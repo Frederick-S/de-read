@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "de-read": "./bin/de-read"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Frederick-S/de-read"
