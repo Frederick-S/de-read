@@ -3,6 +3,10 @@ var read = require('./lib/de-read.js');
 var numberLength = read.util.numberLength;
 
 describe('Number length', function () {
+    it('Not a number', function () {
+        assert.equal(-1, numberLength('abc'));
+    });
+    
     for (var i = 0; i <= 9; i++) {
         it('The length of number ' + i + ' is 1', (function (j) {
             return function () {
