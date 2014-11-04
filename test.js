@@ -33,7 +33,45 @@ describe('Number length', function () {
 });
 
 describe('Read number', function () {
-
+    it('0', function () {
+       assert.equal('null', read.number(0)); 
+    });
+    
+    it('1', function () {
+       assert.equal('ein', read.number(1)); 
+    });
+    
+    it('2', function () {
+       assert.equal('zwei', read.number(2)); 
+    });
+    
+    it('3', function () {
+       assert.equal('drei', read.number(3)); 
+    });
+    
+    it('4', function () {
+       assert.equal('vier', read.number(4)); 
+    });
+    
+    it('5', function () {
+       assert.equal('fünf', read.number(5)); 
+    });
+    
+    it('6', function () {
+       assert.equal('sechs', read.number(6)); 
+    });
+    
+    it('7', function () {
+       assert.equal('sieben', read.number(7)); 
+    });
+    
+    it('8', function () {
+       assert.equal('acht', read.number(8)); 
+    });
+    
+    it('9', function () {
+       assert.equal('neun', read.number(9)); 
+    });
 });
 
 describe('Read year', function () {
