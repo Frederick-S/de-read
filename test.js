@@ -38,7 +38,7 @@ describe('Read number', function () {
     });
     
     it('1', function () {
-       assert.equal('ein', read.number(1)); 
+       assert.equal('eins', read.number(1)); 
     });
     
     it('2', function () {
