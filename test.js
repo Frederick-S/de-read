@@ -32,14 +32,15 @@ describe('Number length', function () {
     }
 });
 
-describe('Read time', function () {
-    
+describe('Read number', function () {
+
 });
 
 describe('Read year', function () {
     
 });
 
-describe('Read number', function () {
-
+describe('Read time', function () {
+    
 });
+
