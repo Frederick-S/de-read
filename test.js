@@ -150,4 +150,32 @@ describe('Read number', function () {
     it('90', function () {
        assert.equal('neunzig', number.read(90)); 
     });
+    
+    it('100', function () {
+       assert.equal('hundert', number.read(100)); 
+    });
+    
+    it('107', function () {
+       assert.equal('hundertsieben', number.read(107)); 
+    });
+    
+    it('139', function () {
+       assert.equal('hundertneununddreißig', number.read(139)); 
+    });
+    
+    it('213', function () {
+       assert.equal('zweihundertdreizehn', number.read(213)); 
+    });
+    
+    it('320', function () {
+       assert.equal('dreihundertzwanzig', number.read(320)); 
+    });
+    
+    it('460', function () {
+       assert.equal('vierhundertsechzig', number.read(460)); 
+    });
+    
+    it('921', function () {
+       assert.equal('neunhunderteinundzwanzig', number.read(921)); 
+    });
 });
