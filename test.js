@@ -178,4 +178,76 @@ describe('Read number', function () {
     it('921', function () {
        assert.equal('neunhunderteinundzwanzig', number.read(921)); 
     });
+    
+    it('1000', function () {
+       assert.equal('tausend', number.read(1000)); 
+    });
+    
+    it('1001', function () {
+       assert.equal('tausendeins', number.read(1001)); 
+    });
+    
+    it('1007', function () {
+       assert.equal('tausendsieben', number.read(1007)); 
+    });
+    
+    it('1023', function () {
+       assert.equal('tausenddreiundzwanzig', number.read(1023)); 
+    });
+    
+    it('2000', function () {
+       assert.equal('zweitausend', number.read(2000)); 
+    });
+    
+    it('2001', function () {
+       assert.equal('zweitausendeins', number.read(2001)); 
+    });
+    
+    it('2083', function () {
+       assert.equal('zweitausenddreiundachtzig', number.read(2083)); 
+    });
+    
+    it('3504', function () {
+       assert.equal('dreitausendfünfhundertvier', number.read(3504)); 
+    });
+    
+    it('6789', function () {
+       assert.equal('sechstausendsiebenhundertneunundachtzig', number.read(6789)); 
+    });
+    
+    it('7100', function () {
+       assert.equal('siebentausendhundert', number.read(7100)); 
+    });
+    
+    it('7101', function () {
+       assert.equal('siebentausendhunderteins', number.read(7101)); 
+    });
+    
+    it('10000', function () {
+       assert.equal('zehntausend', number.read(10000)); 
+    });
+    
+    it('10001', function () {
+       assert.equal('zehntausendeins', number.read(10001)); 
+    });
+    
+    it('65726', function () {
+       assert.equal('fünfundsechzigtausendsiebenhundertsechsundzwanzig', number.read(65726)); 
+    });
+    
+    it('100000', function () {
+       assert.equal('hunderttausend', number.read(100000)); 
+    });
+    
+    it('101000', function () {
+       assert.equal('hunderteintausend', number.read(101000)); 
+    });
+    
+    it('123456', function () {
+       assert.equal('hundertdreiundzwanzigtausendvierhundertsechsundfünfzig', number.read(123456)); 
+    });
+    
+    it('801497', function () {
+       assert.equal('achthunderteintausendvierhundertsiebenundneunzig', number.read(801497)); 
+    });
 });
