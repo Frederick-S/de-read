@@ -250,4 +250,65 @@ describe('Read number', function () {
     it('801497', function () {
        assert.equal('achthunderteintausendvierhundertsiebenundneunzig', number.read(801497)); 
     });
+    
+    it('1000000', function () {
+       assert.equal('eine Million', number.read(1000000)); 
+    });
+    
+    it('1001001', function () {
+       assert.equal('eine Million tausendeins', number.read(1001001)); 
+    });
+    
+    
+    it('1234567', function () {
+       assert.equal('eine Million zweihundertvierunddreißigtausendfünfhundertsiebenundsechzig', number.read(1234567)); 
+    });
+    
+    it('2000000', function () {
+       assert.equal('zwei Millionen', number.read(2000000)); 
+    });
+    
+    it('3000001', function () {
+       assert.equal('drei Millionen eins', number.read(3000001)); 
+    });
+    
+    it('4001000', function () {
+       assert.equal('vier Millionen tausend', number.read(4001000)); 
+    });
+    
+    it('10000001', function () {
+       assert.equal('zehn Millionen eins', number.read(10000001)); 
+    });
+    
+    it('10001000', function () {
+       assert.equal('zehn Millionen tausend', number.read(10001000)); 
+    });
+    
+    it('11000000', function () {
+       assert.equal('elf Millionen', number.read(11000000)); 
+    });
+    
+    it('12345678', function () {
+       assert.equal('zwölf Millionen dreihundertfünfundvierzigtausendsechshundertachtundsiebzig', number.read(12345678)); 
+    });
+    
+    it('100000000', function () {
+       assert.equal('hundert Millionen', number.read(100000000)); 
+    });
+    
+    it('100000001', function () {
+       assert.equal('hundert Millionen eins', number.read(100000001)); 
+    });
+    
+    it('100001000', function () {
+       assert.equal('hundert Millionen tausend', number.read(100001000)); 
+    });
+    
+    it('100100000', function () {
+       assert.equal('hundert Millionen hunderttausend', number.read(100100000)); 
+    });
+    
+    it('123456789', function () {
+       assert.equal('hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig', number.read(123456789)); 
+    });
 });
