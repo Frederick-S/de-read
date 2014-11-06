@@ -335,4 +335,32 @@ describe('Read number', function () {
     it('100123456789', function () {
        assert.equal('hundert Milliarden hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig', number.read(100123456789)); 
     });
+    
+    it('1000000000000', function () {
+       assert.equal('eine Billion', number.read(1000000000000)); 
+    });
+    
+    it('1000000000001', function () {
+       assert.equal('eine Billion eins', number.read(1000000000001)); 
+    });
+    
+    it('1000000101000', function () {
+       assert.equal('eine Billion hunderteintausend', number.read(1000000101000)); 
+    });
+    
+    it('3000000101000', function () {
+       assert.equal('drei Billionen hunderteintausend', number.read(3000000101000)); 
+    });
+    
+    it('4123456789987', function () {
+       assert.equal('vier Billionen hundertdreiundzwanzig Milliarden vierhundertsechsundfünfzig Millionen siebenhundertneunundachtzigtausendneunhundertsiebenundachtzig', number.read(4123456789987)); 
+    });
+    
+    it('10123456789987', function () {
+       assert.equal('zehn Billionen hundertdreiundzwanzig Milliarden vierhundertsechsundfünfzig Millionen siebenhundertneunundachtzigtausendneunhundertsiebenundachtzig', number.read(10123456789987)); 
+    });
+    
+    it('100123456789987', function () {
+       assert.equal('hundert Billionen hundertdreiundzwanzig Milliarden vierhundertsechsundfünfzig Millionen siebenhundertneunundachtzigtausendneunhundertsiebenundachtzig', number.read(100123456789987)); 
+    });
 });
