@@ -311,4 +311,28 @@ describe('Read number', function () {
     it('123456789', function () {
        assert.equal('hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig', number.read(123456789)); 
     });
+    
+    it('1000000000', function () {
+       assert.equal('eine Milliarde', number.read(1000000000)); 
+    });
+    
+    it('1000000001', function () {
+       assert.equal('eine Milliarde eins', number.read(1000000001)); 
+    });
+    
+    it('1000001000', function () {
+       assert.equal('eine Milliarde tausend', number.read(1000001000)); 
+    });
+    
+    it('2123456789', function () {
+       assert.equal('zwei Milliarden hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig', number.read(2123456789)); 
+    });
+    
+    it('10123456789', function () {
+       assert.equal('zehn Milliarden hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig', number.read(10123456789)); 
+    });
+    
+    it('100123456789', function () {
+       assert.equal('hundert Milliarden hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig', number.read(100123456789)); 
+    });
 });
