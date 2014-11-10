@@ -6,6 +6,7 @@ Read number/year/time in German.
 ```js
 var read = require('de-read');
 var number = read.number;
+
 console.log(number.read(123456789));
 
 // Output: hundertdreiundzwanzig Millionen vierhundertsechsundfünfzigtausendsiebenhundertneunundachtzig
