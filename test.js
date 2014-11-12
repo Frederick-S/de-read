@@ -1,6 +1,7 @@
 var assert = require('assert');
 var read = require('./lib/de-read.js');
 var number = read.number;
+var year = read.year;
 
 describe('Read number', function () {
     it('0', function () {
@@ -362,5 +363,55 @@ describe('Read number', function () {
     
     it('100123456789987', function () {
        assert.equal('hundert Billionen hundertdreiundzwanzig Milliarden vierhundertsechsundfünfzig Millionen siebenhundertneunundachtzigtausendneunhundertsiebenundachtzig', number.read(100123456789987)); 
+    });
+});
+
+describe('Read year', function () {
+    it('2013', function () {
+        assert.equal('zweitausenddreizehn', year.read(2013));
+    });
+    
+    it('2008', function () {
+        assert.equal('zweitausendacht', year.read(2008));
+    });
+    
+    it('1057', function () {
+        assert.equal('eintausendsiebenundfünfzig', year.read(1057));
+    });
+    
+    it('836', function () {
+        assert.equal('achthundertsechsunddreißig', year.read(836));
+    });
+    
+    it('1999', function () {
+        assert.equal('neunzehnhundertneunundneunzig', year.read(1999));
+    });
+    
+    it('1949', function () {
+        assert.equal('neunzehnhundertneunundvierzig', year.read(1949));
+    });
+    
+    it('1821', function () {
+        assert.equal('achtzehnhunderteinundzwanzig', year.read(1821));
+    });
+    
+    it('1512', function () {
+        assert.equal('fünfzehnhundertzwölf', year.read(1512));
+    });
+    
+    it('1130', function () {
+        assert.equal('elfhundertdreißig', year.read(1130));
+    });
+    
+    it('123', function () {
+        assert.equal('einhundertdreiundzwanzig', year.read(123));
+    });
+    
+    it('101', function () {
+        assert.equal('einhunderteins', year.read(101));
+    });
+    
+    it('1001', function () {
+        assert.equal('eintausendeins', year.read(1001));
     });
 });
