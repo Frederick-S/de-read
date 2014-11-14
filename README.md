@@ -18,3 +18,6 @@ var year = read.year;
 console.log(year.read(2008)); // => zweitausendacht 
 console.log(year.read(1949)); // => neunzehnhundertneunundvierzig
 ```
+
+### Time
+In progress.
