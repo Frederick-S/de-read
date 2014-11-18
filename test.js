@@ -2,6 +2,7 @@ var assert = require('assert');
 var read = require('./lib/de-read.js');
 var number = read.number;
 var year = read.year;
+var time = read.time;
 
 describe('Read number', function () {
     it('0', function () {
@@ -413,5 +414,31 @@ describe('Read year', function () {
     
     it('1001', function () {
         assert.equal('eintausendeins', year.read(1001));
+    });
+});
+
+describe('Read time officially', function () {
+    it('6.00 Uhr', function () {
+        assert.equal('um sechs Uhr', time.read(6, 0, true));
+    });
+    
+    it('8.45 Uhr', function () {
+        assert.equal('um acht Uhr fünfundvierzig', time.read(8, 45, true));
+    });
+    
+    it('9.00 Uhr', function () {
+        assert.equal('um neun Uhr', time.read(9, 0, true));
+    });
+    
+    it('12.30 Uhr', function () {
+        assert.equal('um zwölf Uhr dreißig', time.read(12, 30, true));
+    });
+    
+    it('15.00 Uhr', function () {
+        assert.equal('um fünfzehn Uhr', time.read(15, 0, true));
+    });
+    
+    it('20.15 Uhr', function () {
+        assert.equal('um zwanzig Uhr fünfzehn', time.read(20, 15, true));
     });
 });
