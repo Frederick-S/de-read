@@ -28,3 +28,12 @@ var time = read.time;
 console.log(time.read(6, 0, true)); // => um sechs Uhr
 console.log(time.read(8, 45, true)); // => um acht Uhr fünfundvierzig
 ```
+
+Or read time officially:
+```js
+var read = require('de-read');
+var time = read.time;
+
+console.log(time.read(10, 40)); // => zwanzig vor elf
+console.log(time.read(10, 45)); // => Viertel vor elf
+```
