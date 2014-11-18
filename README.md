@@ -37,3 +37,6 @@ var time = read.time;
 console.log(time.read(10, 40)); // => zwanzig vor elf
 console.log(time.read(10, 45)); // => Viertel vor elf
 ```
+
+## License
+MIT.
