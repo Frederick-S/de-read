@@ -442,3 +442,53 @@ describe('Read time officially', function () {
         assert.equal('um zwanzig Uhr fünfzehn', time.read(20, 15, true));
     });
 });
+
+describe('Read time unofficially', function () {
+    it('10.00 Uhr', function () {
+        assert.equal('zehn', time.read(10, 0));
+    });
+    
+    it('10.05 Uhr', function () {
+        assert.equal('fünf nach zehn', time.read(10, 5));
+    });
+    
+    it('10.10 Uhr', function () {
+        assert.equal('zehn nach zehn', time.read(10, 10));
+    });
+    
+    it('10.15 Uhr', function () {
+        assert.equal('Viertel nach zehn', time.read(10, 15));
+    });
+    
+    it('10.20 Uhr', function () {
+        assert.equal('zwanzig nach zehn', time.read(10, 20));
+    });
+    
+    it('10.30 Uhr', function () {
+        assert.equal('halb elf', time.read(10, 30));
+    });
+    
+    it('12.30 Uhr', function () {
+        assert.equal('halb eins', time.read(12, 30));
+    });
+    
+    it('10.35 Uhr', function () {
+        assert.equal('fünfundzwanzig vor elf', time.read(10, 35));
+    });
+    
+    it('10.40 Uhr', function () {
+        assert.equal('zwanzig vor elf', time.read(10, 40));
+    });
+    
+    it('10.45 Uhr', function () {
+        assert.equal('Viertel vor elf', time.read(10, 45));
+    });
+    
+    it('10.50 Uhr', function () {
+        assert.equal('zehn vor elf', time.read(10, 50));
+    });
+    
+    it('10.55 Uhr', function () {
+        assert.equal('fünf vor elf', time.read(10, 55));
+    });
+});
