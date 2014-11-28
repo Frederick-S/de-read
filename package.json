@@ -1,7 +1,7 @@
 {
   "name": "de-read",
   "version": "0.0.2",
-  "description": "",
+  "description": "Read number/year/time in German.",
   "main": "index.js",
   "repository": {
     "type": "git",
