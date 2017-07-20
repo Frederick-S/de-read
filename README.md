@@ -1,4 +1,6 @@
 # de-read ![Build Status](https://travis-ci.org/Frederick-S/de-read.svg) [![Coverage Status](https://coveralls.io/repos/github/Frederick-S/de-read/badge.svg?branch=master)](https://coveralls.io/github/Frederick-S/de-read?branch=master)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Frederick-S/de-read.svg)](https://greenkeeper.io/)
 Read number/year/time in German.
 
 ## Usage
